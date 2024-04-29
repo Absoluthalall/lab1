@@ -17,8 +17,6 @@ public class Main {
         top.add(secondNode);
         for (int i = 0; i < university.getStudents().size(); i++) {
             DefaultMutableTreeNode student = new DefaultMutableTreeNode(university.students.get(i).getName());
-
-            // Создаем узлы для книг и добавляем их в узел имени студента
             for (int j = 0; j <university.students.get(i).getBooks().size() ; j++) {
                 DefaultMutableTreeNode book = new DefaultMutableTreeNode(university.students.get(i).getBooks().get(j).getName());
                 student.add(book);
@@ -28,8 +26,6 @@ public class Main {
         }
         for (int i = 0; i < university.getTeachers().size(); i++) {
             DefaultMutableTreeNode teachers = new DefaultMutableTreeNode(university.teachers.get(i).getName());
-
-            // Создаем узлы для книг и добавляем их в узел имени студента
             for (int j = 0; j <university.teachers.get(i).getBooks().size() ; j++) {
                 DefaultMutableTreeNode book = new DefaultMutableTreeNode(university.teachers.get(i).getBooks().get(j).getName());
                 teachers.add(book);
