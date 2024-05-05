@@ -15,10 +15,10 @@ public class University {
             this.teachers.add(humanFactory.createHuman(TEACHER));
         }
     }
-    public ArrayList getStudents(){
+    public ArrayList<Human> getStudents(){
         return this.students;
     }
-    public ArrayList getTeachers(){
+    public ArrayList<Human> getTeachers(){
         return this.teachers;
     }
 }

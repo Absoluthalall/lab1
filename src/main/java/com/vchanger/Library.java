@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 public class Library {
     ArrayList<Book> books = new ArrayList<>();
+
     public Library(){
         EnglishBookFactory englishBookFactory = new EnglishBookFactory();
         RussianBookFactory russianBookFactory = new RussianBookFactory();
@@ -14,7 +15,7 @@ public class Library {
             books.add(russianBookFactory.createScientificBook());
         }
     }
-    public ArrayList getBooks(){
+    public ArrayList<Book> getBooks(){
         return this.books;
     }
 }
